@@ -51,12 +51,12 @@ public class Calculator {
 
         //Напишите программу, которая с помощью цикла do-while считает количество цифр во введённом числе.
         System.out.println("Введите число: ");
-        int chislo = scanner.nextInt();
+        int numberD = scanner.nextInt();
         int i=0;
 
-        do{ chislo = chislo/10;
+        do{ numberD = numberD/10;
             i++;
-        }while(chislo> 0);
+        }while(numberD> 0);
 
         System.out.println("В этом числе " + i + " цифр.");
         // Например, если число 1234, то ответ: 4. Указание : в задании с подсчётом цифр можно «делить число на 10» в цикле,

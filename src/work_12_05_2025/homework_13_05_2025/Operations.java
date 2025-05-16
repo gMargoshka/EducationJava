@@ -2,8 +2,8 @@ package work_12_05_2025.homework_13_05_2025;
 
 public class Operations {
 
-    public void printSum(int number1,int number2) {
-         System.out.println("Итого: " + (number1+number2));
+    public void printSum(int a,int b) {
+         System.out.println("Итого: " + (a+b));
     }
     public void printDiff(int a,int b) {
         System.out.println("Итого: " + (a-b));
