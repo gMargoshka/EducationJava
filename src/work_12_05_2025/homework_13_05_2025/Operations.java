@@ -36,5 +36,18 @@ public class Operations {
         return (a/b);
     }
 
+    public void printNubers() {
+        int count = 5;
+        System.out.println(count);
+    }
+
+    public void printVar(int a, int b) {
+        if (a>b) {
+            String c = " больше ";
+            System.out.println(a + c + b);
+        } else {
+            System.out.println("Остальное не важно.");
+        }
+    }
 
 }
