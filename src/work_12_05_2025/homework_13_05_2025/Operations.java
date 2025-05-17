@@ -18,7 +18,23 @@ public class Operations {
         System.out.println("Итого: " + (a%b));
     }
 
+
     public int getMulti(int a,int b) {
         return a * b;
     }
+
+    public double getSum(double a,double b) {
+        return (a+b);
+    }
+    public double getDiff(double a,double b) {
+        return (a-b);
+    }
+    public double getMulti(double a,double b) {
+        return (a*b);
+    }
+    public double getDivision(double a, double b) {
+        return (a/b);
+    }
+
+
 }

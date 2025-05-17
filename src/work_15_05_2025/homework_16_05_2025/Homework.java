@@ -1,14 +1,20 @@
 package work_15_05_2025.homework_16_05_2025;
 
+import work_12_05_2025.homework_13_05_2025.Operations;
+
 import java.util.Scanner;
 
 public class Homework {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
+//        Scanner scanner = new Scanner(System.in);
+        // Operations operations = new Operations();
+/*
        // Задания для закрепления
 //        Объявление примитивных переменных:
 //        Создайте программу, которая объявляет переменные всех 8 примитивных типов, присваивает им значения и выводит их на экран.
+        boolean bo;
+        bo = true;
+        System.out.println("Переменная типа boolean = " + bo);
         byte b;
         b = 1;
         System.out.println("Переменная типа byte = " + b);
@@ -16,17 +22,19 @@ public class Homework {
         s = 2;
         System.out.println("Переменная типа short = " + s);
         int i;
-        i = 1;
+        i = 3;
         System.out.println("Переменная типа int = " + i);
         long l;
-        l = 90_000_000_000L;
+        l = 40_000_000_000L;
         System.out.println("Переменная типа long = " + l);
         float f;
-        f = 1.058f;
+        f = 5.058f;
         System.out.println("Переменная типа float = " + f);
         double d;
-        d = 5.25;
+        d = 6.25;
         System.out.println("Переменная типа double = " + d);
+        char ch = '+';
+        System.out.println("Переменная типа char = " + ch);
 
 //                Сравнение чисел:
 //        Напишите программу, которая считывает с консоли два числа типа int и выводит результаты сравнений с помощью операторов >, <, == и !=.
@@ -50,23 +58,57 @@ public class Homework {
 
 //        Работа с символами:
 //        Создайте программу, в которой переменная типа char хранит символ. Соберите строку из нескольких символов (с помощью цикла) и выведите её.
-        char symbol = :;
+        char symbol = ':';
+        System.out.print("Строка символов: ");
         for (int j = 0; j < 5; j++) {
-            System.out.println("Строка символов: " + symbol);
-
+            System.out.print(symbol);
         }
-//
+
 //                Арифметические операции с вещественными числами:
 //        Напишите программу, которая объявляет переменную типа double, выполняет над ней арифметические операции (сложение, вычитание, умножение, деление) и выводит результат с округлением до целого.
-//
+        double varDouble1 = 1.56;
+        double varDouble2 = 10;
+
+        System.out.println("Сумма, округленная до целого числа: " + Math.round(operations.getSum(varDouble1,varDouble2)));
+        System.out.println("Разница, округленная до целого числа: " + Math.round(operations.getDiff(varDouble1,varDouble2)));
+        System.out.println("Произведение, округленное до целого числа: " + Math.round(operations.getMulti(varDouble1,varDouble2)));
+        System.out.println("Деление, округленное до целого числа: " + Math.round(operations.getDivision(varDouble1,varDouble2)));
+*/
 //                Сравнение строк:
-//        Создайте две строки – одну через строковый литерал, другую через new String("Hello"). Сравните их с помощью оператора == и метода equals(), выведите результаты и поясните разницу.
+//        Создайте две строки – одну через строковый литерал, другую через new String("Hello"). Сравните их с помощью оператора == и метода equals(),
+//        выведите результаты и поясните разницу.
+        String str1 = "Привет, Ритулик!";
+        String str2 = new String("Привет, Ритулик!");
+
+        if (str1 == str2) {
+            System.out.println("Строковые переменные одинаковы");
+        } else {
+            System.out.println("Строковые переменные разные");
+        }
+
+        //System.out.println(str1.equals(str2)); // значение true проверка для себя.
+
+        String result = (str1.equals(str2)) ? "Строковые переменные одинаковы" : "Строковые переменные разные";
+        System.out.println(result);
+
+        System.out.println("Значения сравнения через == и equals разные, потому что == сравнивает ссылки на разные объекты (str1 и str2, хотя значения у них равны) в памяти компьютера и возвращает результат, а метод equals проверяет, одинаковы ли значения объектов, а не являются ли они одним и тем же объектом в памяти.");
+        System.out.println("Вывод таков: если нужно сравнить ссылки на объекты, используем ==. Если требуется сравнить значения объектов, используйем equals(), но при этом учитываем, что поведение этого метода может отличаться в разных классах.");
 //
 //        Работа с массивом целых чисел:
 //        Объявите массив int[] из 5 элементов, заполните его значениями и выведите на экран первый и последний элемент массива.
-//
+        int[] numbersMass = {1, 2, 3, 4, 5};
+
+        System.out.println(numbersMass[0] + ", " + numbersMass[numbersMass.length - 1]);
+        //
+
 //                Массив строк:
 //        Создайте массив String[], содержащий названия дней недели, и выведите длину каждого элемента (количество символов).
+        //  String[] strArray = {"Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"};
+        //  for (int i = 0; i < strArray.length; i++) {
+        // int dl = strArray[i];
+        //  System.out.println("Длинна " + i + " элемента массива strArray равна " + dl.length());
+        //    i++;
+        // }
 //
 //        Формирование строки из массива символов:
 //        Объявите массив char[], заполните его символами и с помощью цикла сформируйте строку, которую затем выведите на экран.
@@ -79,5 +121,3 @@ public class Homework {
 
 
     }
-
-}
