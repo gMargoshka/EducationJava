@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Homework {
     public static void main(String[] args) {
-/*        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         Operations operations = new Operations();
 
        // Задания для закрепления 1
@@ -243,12 +243,12 @@ public class Homework {
 
 
         System.out.println("------------------------------------------------------------------------------------ ");
-*/
+
 //        Задания для закрепления 3
 //        Арифметические операции:
 //        Напишите программу, которая принимает два числа (можно захардкодить) и выполняет все арифметические операции: сложение, вычитание, умножение, деление и вычисление остатка от деления.
         Scanner scanner1 = new Scanner(System.in);
-/*        Operations operations1 = new Operations();
+        Operations operations1 = new Operations();
 
         System.out.println("Введите число: ");
         int numb1 = scanner1.nextInt();
@@ -397,19 +397,19 @@ public class Homework {
 
 
         System.out.println("------------------------------------------------------------------------------------ ");
-*/
+
 //                Массив и побитовые операции:
 //        Создайте массив целых чисел. С помощью цикла и побитовых операторов найдите и выведите элементы, у которых, например, установлен второй бит.
 
 //-----> не очень поняла как решить с помощью побитового опреатора, но решила так, если правильно поняла что такое второй бит числа:
         int[] intMassive = {-8,0,1,2,3,4,11,123};
-        for (int i = 0; i < intMassive.length; i++) {
-            System.out.println(intMassive[i] + " = " + Integer.toBinaryString(intMassive[i]) + " в двоичном представлении.");
-            if (Integer.toBinaryString(intMassive[i]).length()>1) {
-                System.out.println("У числа " + intMassive[i] + " есть второй бит :)");
+        for (int j : intMassive) {
+            System.out.println(j + " = " + Integer.toBinaryString(j) + " в двоичном представлении.");
+            if (Integer.toBinaryString(j).length() > 1) {
+                System.out.println("У числа " + j + " есть второй бит :)");
                 System.out.println(" ");
             } else {
-                System.out.println("У числа " + intMassive[i] + " нет второго бита :(");
+                System.out.println("У числа " + j + " нет второго бита :(");
                 System.out.println(" ");
             }
         }
