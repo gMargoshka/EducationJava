@@ -9,34 +9,7 @@ public class Homework {
         Scanner scanner = new Scanner(System.in);
         Operations operations = new Operations();
 
-       // Задания для закрепления 1
-//        Объявление примитивных переменных:
-//        Создайте программу, которая объявляет переменные всех 8 примитивных типов, присваивает им значения и выводит их на экран.
-        boolean bo;
-        bo = true;
-        System.out.println("Переменная типа boolean = " + bo);
-        byte b;
-        b = 1;
-        System.out.println("Переменная типа byte = " + b);
-        short s;
-        s = 2;
-        System.out.println("Переменная типа short = " + s);
-        int i;
-        i = 3;
-        System.out.println("Переменная типа int = " + i);
-        long l;
-        l = 40_000_000_000L;
-        System.out.println("Переменная типа long = " + l);
-        float f;
-        f = 5.058f;
-        System.out.println("Переменная типа float = " + f);
-        double d;
-        d = 6.25;
-        System.out.println("Переменная типа double = " + d);
-        char ch = '+';
-        System.out.println("Переменная типа char = " + ch);
-
-        System.out.println("------------------------------------------------------------------------------------ ");
+        task1();
 
 //                Сравнение чисел:
 //        Напишите программу, которая считывает с консоли два числа типа int и выводит результаты сравнений с помощью операторов >, <, == и !=.
@@ -53,8 +26,7 @@ public class Homework {
             } else {
                 System.out.println("Первое число больше второго");
             }
-        }
-            else {
+        } else {
             System.out.println("Первое число равно второму");
         }
 
@@ -75,10 +47,10 @@ public class Homework {
         double varDouble1 = 1.56;
         double varDouble2 = 10;
 
-        System.out.println("Сумма, округленная до целого числа: " + Math.round(operations.getSum(varDouble1,varDouble2)));
-        System.out.println("Разница, округленная до целого числа: " + Math.round(operations.getDiff(varDouble1,varDouble2)));
-        System.out.println("Произведение, округленное до целого числа: " + Math.round(operations.getMulti(varDouble1,varDouble2)));
-        System.out.println("Деление, округленное до целого числа: " + Math.round(operations.getDivision(varDouble1,varDouble2)));
+        System.out.println("Сумма, округленная до целого числа: " + Math.round(operations.getSum(varDouble1, varDouble2)));
+        System.out.println("Разница, округленная до целого числа: " + Math.round(operations.getDiff(varDouble1, varDouble2)));
+        System.out.println("Произведение, округленное до целого числа: " + Math.round(operations.getMulti(varDouble1, varDouble2)));
+        System.out.println("Деление, округленное до целого числа: " + Math.round(operations.getDivision(varDouble1, varDouble2)));
 
         System.out.println("------------------------------------------------------------------------------------ ");
 
@@ -96,7 +68,7 @@ public class Homework {
 
         //System.out.println(str1.equals(str2)); // значение true проверка для себя.
 
-      String result = (str1.equals(str2)) ? "Строковые переменные одинаковы" : "Строковые переменные разные";
+        String result = (str1.equals(str2)) ? "Строковые переменные одинаковы" : "Строковые переменные разные";
         System.out.println(result);
 
         System.out.println("Значения сравнения через == и equals разные, потому что == сравнивает ссылки на разные объекты (str1 и str2, хотя значения у них равны) в памяти компьютера и возвращает результат, а метод equals проверяет, одинаковы ли значения объектов, а не являются ли они одним и тем же объектом в памяти.");
@@ -107,24 +79,24 @@ public class Homework {
 //
 //        Работа с массивом целых чисел:
 //        Объявите массив int[] из 5 элементов, заполните его значениями и выведите на экран первый и последний элемент массива.
-        int[] numbersMass = {1,2,3,4,5};
+        int[] numbersMass = {1, 2, 3, 4, 5};
 
-       System.out.println(numbersMass[0] + ", " + numbersMass[numbersMass.length-1]);
+        System.out.println(numbersMass[0] + ", " + numbersMass[numbersMass.length - 1]);
 
-       System.out.println("------------------------------------------------------------------------------------ ");
+        System.out.println("------------------------------------------------------------------------------------ ");
 
 //                Массив строк:
 //        Создайте массив String[], содержащий названия дней недели, и выведите длину каждого элемента (количество символов).
-        String[] strArray = {"Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"};
-                for (int j = 0; j < strArray.length; j++) {
-            System.out.println("Длинна " + j + " элемента массива strArray равна " + strArray[j].length() );
+        String[] strArray = {"Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье"};
+        for (int j = 0; j < strArray.length; j++) {
+            System.out.println("Длинна " + j + " элемента массива strArray равна " + strArray[j].length());
         }
 
         System.out.println("------------------------------------------------------------------------------------ ");
 
 //        Формирование строки из массива символов:
 //        Объявите массив char[], заполните его символами и с помощью цикла сформируйте строку, которую затем выведите на экран.
-        char[] charArray = {':',')',')',')'};
+        char[] charArray = {':', ')', ')', ')'};
         for (int k = 0; k < charArray.length; k++) {
             System.out.print(charArray[k]);
         }
@@ -138,12 +110,20 @@ public class Homework {
 //!-->  Не очень поняла как выполнить задание , мое решение такое:
         int primitiv1 = 13;
         int primitiv2 = primitiv1;
+        primitiv1 = 10;
 
-        String ssylka1 = "Кукусики";
-        String ssylka2 = ssylka1;
+//        String ssylka1 = "Кукусики";
+//        String ssylka2 = ssylka1;
+
+        int[] ssylka1 = {1, 2, 3};
+        int[] ssylka2 = ssylka1;
+        ssylka1[0] = 99;
+
 
         System.out.println(primitiv2);
-        System.out.println(ssylka2);
+        System.out.println(primitiv1);
+        System.out.println("=============");
+        System.out.println(ssylka2[0]);
 
         System.out.println("------------------------------------------------------------------------------------ ");
 //
@@ -170,9 +150,9 @@ public class Homework {
         System.out.println("------------------------------------------------------------------------------------ ");
 
 //        Переменные экземпляра:
-//        Создайте класс Person с полями name и age. Создайте несколько объектов этого класса с разными значениями и выведите их данные на экран.
-        Human rita = new Human("Рита",33);
-        Human iia = new Human("Ия",32);
+//        Создайте класс PersonBySetter с полями name и age. Создайте несколько объектов этого класса с разными значениями и выведите их данные на экран.
+        Human rita = new Human("Рита", 33);
+        Human iia = new Human("Ия", 32);
         System.out.println("Имя: " + rita.name + " и " + "Возраст: " + rita.age);
         System.out.println("Имя: " + iia.name + " и " + "Возраст: " + iia.age);
 
@@ -211,8 +191,8 @@ public class Homework {
 //
 //        Переменные в разных блоках:
 //        Создайте метод, в котором переменные объявлены внутри блока if и вне его, и выведите их значения, чтобы показать разницу в области видимости.
-        operations.printVar(8,2);
-        operations.printVar(1,9);
+        operations.printVar(8, 2);
+        operations.printVar(1, 9);
 
         System.out.println("------------------------------------------------------------------------------------ ");
 //
@@ -261,19 +241,19 @@ public class Homework {
 
         switch (symb) {
             case "+":
-                operations1.printSum(numb1,numb2);
+                operations1.printSum(numb1, numb2);
                 break;
             case "-":
-                operations1.printDiff(numb1,numb2);
+                operations1.printDiff(numb1, numb2);
                 break;
             case "*":
-                operations1.printMulti(numb1,numb2);
+                operations1.printMulti(numb1, numb2);
                 break;
             case "/":
-                operations1.printDivision(numb1,numb2);
+                operations1.printDivision(numb1, numb2);
                 break;
             case "%":
-                operations1.printRemainder(numb1,numb2);
+                operations1.printRemainder(numb1, numb2);
                 break;
             default:
                 System.out.println("Ошибка.Оператор не распознан!");
@@ -292,7 +272,7 @@ public class Homework {
         System.out.println("Введите еще одно число: ");
         int numb4 = scanner1.nextInt();
 
-        if (numb3!=numb4) {
+        if (numb3 != numb4) {
             System.out.println("Перове число != второму");
             if (numb3 > numb4) {
                 System.out.println("Первое больше!");
@@ -300,8 +280,8 @@ public class Homework {
                 System.out.println("Второе больше!");
             }
         } else {
-                System.out.println("Перове число == второму");
-            }
+            System.out.println("Перове число == второму");
+        }
 //-----> заметила, что у меня возникает ошибка компиляции после каждого неуспешного запуска кода. Почему то начинает краснеть какой-нибудь метод, например принтлн.
 //        но даже если я поправлю код (ошибка не в принтлн) на корректный сам мето продолжает гореть красным и как это исправить я не понимаю.
         System.out.println("------------------------------------------------------------------------------------ ");
@@ -365,22 +345,22 @@ public class Homework {
 //                Комбинированное присваивание:
 //        Напишите программу, где переменной последовательно применяются операторы комбинированного присваивания (+=, -=, *=, /=, %=) с выводом значения после каждой операции.
         int numb5 = 1;
-        numb5+= 100;
+        numb5 += 100;
         System.out.println(numb5); // 101
-        numb5-=51;
+        numb5 -= 51;
         System.out.println(numb5); // 50
-        numb5*=3;
+        numb5 *= 3;
         System.out.println(numb5); // 150
-        numb5/=5;
+        numb5 /= 5;
         System.out.println(numb5); // 30
-        numb5%=4;
+        numb5 %= 4;
         System.out.println(numb5); // 2
 
         System.out.println("------------------------------------------------------------------------------------ ");
 //
 //        Приоритет операторов:
 //        Создайте программу, в которой вычисляется сложное арифметическое выражение с различными операторами. Используйте скобки для управления приоритетом и выведите результат.
-        System.out.println((numb3+numb4)/100 * (50 + numb5));
+        System.out.println((numb3 + numb4) / 100 * (50 + numb5));
 
         System.out.println("------------------------------------------------------------------------------------ ");
 //
@@ -389,7 +369,7 @@ public class Homework {
         System.out.println("Введите число");
         int numb6 = scanner1.nextInt();
 
-        if (numb6%2 == 0) {
+        if (numb6 % 2 == 0) {
             System.out.println("Число четное");
         } else {
             System.out.println("Число нечетное");
@@ -402,7 +382,7 @@ public class Homework {
 //        Создайте массив целых чисел. С помощью цикла и побитовых операторов найдите и выведите элементы, у которых, например, установлен второй бит.
 
 //-----> не очень поняла как решить с помощью побитового опреатора, но решила так, если правильно поняла что такое второй бит числа:
-        int[] intMassive = {-8,0,1,2,3,4,11,123};
+        int[] intMassive = {-8, 0, 1, 2, 3, 4, 11, 123};
         for (int j : intMassive) {
             System.out.println(j + " = " + Integer.toBinaryString(j) + " в двоичном представлении.");
             if (Integer.toBinaryString(j).length() > 1) {
@@ -481,4 +461,35 @@ public class Homework {
 */
     }
 
+
+    public static void task1() {
+        // Задания для закрепления 1
+//        Объявление примитивных переменных:
+//        Создайте программу, которая объявляет переменные всех 8 примитивных типов, присваивает им значения и выводит их на экран.
+        boolean bo;
+        bo = true;
+        System.out.println("Переменная типа boolean = " + bo);
+        byte b;
+        b = 1;
+        System.out.println("Переменная типа byte = " + b);
+        short s;
+        s = 2;
+        System.out.println("Переменная типа short = " + s);
+        int i;
+        i = 3;
+        System.out.println("Переменная типа int = " + i);
+        long l;
+        l = 40_000_000_000L;
+        System.out.println("Переменная типа long = " + l);
+        float f;
+        f = 5.058f;
+        System.out.println("Переменная типа float = " + f);
+        double d;
+        d = 6.25;
+        System.out.println("Переменная типа double = " + d);
+        char ch = '+';
+        System.out.println("Переменная типа char = " + ch);
+
+        System.out.println("------------------------------------------------------------------------------------ ");
+    }
 }
