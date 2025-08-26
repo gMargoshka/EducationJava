@@ -1,0 +1,19 @@
+Throwable
+├── Error (Unchecked)
+│   ├── OutOfMemoryError
+│   ├── StackOverflowError
+│   ├── NoClassDefFoundError
+│   └── AssertionError
+└── Exception
+    ├── RuntimeException (Unchecked)
+    │   ├── NullPointerException
+    │   ├── IllegalArgumentException
+    │   ├── IndexOutOfBoundsException
+    │   ├── ClassCastException
+    │   └── ConcurrentModificationException
+    └── Checked Exceptions
+        ├── IOException
+        ├── SQLException
+        ├── ClassNotFoundException
+        ├── InterruptedException
+        └── ReflectiveOperationException
