@@ -11,8 +11,7 @@ public class Developer extends Employee implements Workable, Payable {
         fixSalary = 300000;
     }
 
-    public String toString() {
-        return "Табельный номер: " + id + " Имя: " + name + " ЗП: " + calculateSalary();
+    public String toString() { return "Табельный номер: " + id + " Имя: " + name + " ЗП: " + calculateSalary();
     }
 
 
