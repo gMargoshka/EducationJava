@@ -23,7 +23,10 @@ public class Main {
 
         Manager charly = new Manager(6, "Charly", 22,100000);
 
-        System.out.println("\n" + "++++++++++++++++++++++++++++++++++++++++++++++" + "\n");
+        System.out.println("""
+                
+                ++++++++++++++++++++++++++++++++++++++++++++++
+                """);
         System.out.println(charly.name + " заработал в этом месяце: " + charly.calculateSalary() + ". Его табельный номер: " + charly.id + ". Чарли молодец, ведь он работает.");
         charly.work();
     }
