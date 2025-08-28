@@ -7,7 +7,7 @@ public class Flute extends WindInstrument{
 
     @Override
     public String toString() {
-        return "Название инструмента: " + name + " \nТип инструмента: " + type;
+        return super.toString();
     }
 
     @Override

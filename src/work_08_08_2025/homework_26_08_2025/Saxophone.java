@@ -7,8 +7,11 @@ public class Saxophone extends WindInstrument{
 
     @Override
     public String toString() {
-        return "Название инструмента: " + name + " \nТип инструмента: " + type;
+        setMat("Металл"); // некорректное использование статической переменной, надо использовать как обычную переменную.
+        setName("Саксофон Игорь"); // корректная замена значения.
+        return super.toString();
     }
+
 
     @Override
     public void play() {

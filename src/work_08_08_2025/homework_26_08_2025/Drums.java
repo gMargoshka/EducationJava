@@ -7,7 +7,7 @@ public class Drums extends Instrument implements Playable{
 
     @Override
     public String toString() {
-        return "Название инструмента: " + name + " \nТип инструмента: " + type;
+        return "Название инструмента: " + getName() + " \nТип инструмента: " + getType();
     }
 
     @Override

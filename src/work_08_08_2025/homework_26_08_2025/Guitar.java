@@ -7,7 +7,7 @@ public class Guitar extends StringInstrument{
 
     @Override
     public String toString() {
-        return "Название инструмента: " + name + " \nТип инструмента: " + type + " \nКоличество струн:  " + numberOfStrings;
+        return super.toString() + " \nКоличество струн:  " + numberOfStrings;
     }
 
     @Override
