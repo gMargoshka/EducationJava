@@ -19,26 +19,14 @@ public class Main {
         tunable[1] = new Violin("Виолончель", "струнные", 5);
 
         try {
-
-            Scanner scanner = new Scanner(System.in);
-            System.out.println("Введите количество струн");
-            int strings = scanner.nextInt();
-
-            for (StringInstrument instrument : tunable) {
-                if (strings == instrument.numberOfStrings) {
-                    System.out.println("**************************************");
-                    System.out.println(instrument);
-                    System.out.println("**************************************");
-                }
-            }
-        } catch (InputMismatchException ime) {
-            System.out.println(ime.getMessage());
-              //throw new TunableException("Некорректно введено количество струн!");
-            System.out.println("Некорректно введено количество струн!");
+            inputStrings(tunable);
+        } catch (TunableException e){
+            System.out.println(e.getMessage());
         }
 
 
-            System.out.println("Состав оркестра:");
+
+        System.out.println("Состав оркестра:");
 
             for (Instrument instrument : orchestra) {
                 System.out.println("--------------------------------------");
@@ -54,5 +42,26 @@ public class Main {
                 System.out.println(instrument);
             }
 
+    }
+
+    private static void inputStrings(StringInstrument[] tunable) {
+        try {
+
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Введите количество струн");
+            int strings = scanner.nextInt();
+
+            for (StringInstrument instrument : tunable) {
+                if (strings == instrument.numberOfStrings) {
+                    System.out.println("**************************************");
+                    System.out.println(instrument);
+                    System.out.println("**************************************");
+                }
+            }
+        } catch (InputMismatchException ime) {
+            System.out.println(ime.getMessage());
+            throw new TunableException("Некорректно введено количество струн!"); // throw выходит из метода если нет catch.
+//            System.out.println("Некорректно введено количество струн!");
+        }
     }
 }
