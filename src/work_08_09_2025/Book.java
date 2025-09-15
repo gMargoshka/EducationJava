@@ -29,7 +29,7 @@ public class Book {
         return status;
     }
 
-    public BookStatus setStatus(BookStatus status) {
-        return status;
+    public void setStatus(BookStatus status) {
+        this.status = status;
     }
 }

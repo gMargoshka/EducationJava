@@ -27,7 +27,7 @@ public class Library {
         Reader libraryReader = checkReaderByName(reader.getName());
         if (book != null && libraryReader != null) {
             book.setStatus(BookStatus.IN_PROGRESS);
-            reader.setBook(book);
+            reader.addBook(book);
             System.out.println("Книга выдана читателю!");
         }
     }
@@ -37,7 +37,7 @@ public class Library {
         Book libraryBook = checkBook(book);
         if (libraryBook != null && libraryReader != null) {
             book.setStatus(BookStatus.FREE);
-            reader.setBook(null);
+            reader.deleteBook(libraryBook);
             System.out.println("Спасибо, что сдали книгу!");
         }
     }

@@ -20,7 +20,12 @@ public class Reader {
         return books;
     }
 
-    public void setBook(Book book) {
+    public void addBook(Book book) {
         this.books.add(book);
     }
+    public void deleteBook(Book book) {
+        this.books.remove(book);
+    }
+
+
 }
