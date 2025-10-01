@@ -1,0 +1,18 @@
+Задача: Анализатор текста
+Используя коллекции, создайте анализатор текста:
+
+"Я очень очень люблю ходить на работу утром"
+
+public class TextAnalyzer {
+    // Подсчитать частоту слов (Map)
+    public Map<String, Integer> wordFrequency(String text) { }
+
+    // Найти уникальные слова (Set)
+    public Set<String> uniqueWords(String text) { }
+
+    // Топ N частых слов (PriorityQueue)
+    public List<String> topNWords(String text, int n) { }
+
+    // История анализов (LinkedList)
+    public void saveAnalysis(String text) { }
+}
